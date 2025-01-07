@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to Telegram</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #4c67e4, #67d3e0);
+      font-family: Arial, sans-serif;
+    }
+
+    .redirect-container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      width: 90%; /* Responsive width */
+      max-width: 400px; /* Max width for larger screens */
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .redirect-container h1 {
+      color: #333;
+      font-size: 1.8rem; /* Adjust for responsiveness */
+      margin-bottom: 10px;
+    }
+
+    .redirect-container p {
+      color: #555;
+      font-size: 1rem; /* Adjust for responsiveness */
+      margin-bottom: 20px;
+    }
+
+    .redirect-button {
+      text-decoration: none;
+      background-color: #4c67e4;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .redirect-button:hover {
+      background-color: #354cb2;
+    }
+
+    /* Media Queries for Smaller Screens */
+    @media (max-width: 480px) {
+      .redirect-container h1 {
+        font-size: 1.5rem;
+      }
+
+      .redirect-container p {
+        font-size: 0.9rem;
+      }
+
+      .redirect-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="redirect-container">
+    <h1>Join Our Telegram Channel</h1>
+    <p>Click below to get redirected to our official Telegram channel.</p>
+    <a href="https://t.me/+6nGU-y786MJjYWJl" class="redirect-button" target="_blank">Go to Telegram</a>
+  </div>
+</body>
+</html>
